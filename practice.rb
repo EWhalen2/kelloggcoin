@@ -36,23 +36,23 @@ anthony_balance = 0
 
 for transaction in blockchain
    if transaction["from_user"] == "ben"
-     ben_balance == ben_balance - transaction["amount"]
+     ben_balance = ben_balance - transaction["amount"]
    elsif transaction["from_user"] == "brian"
-     brian_balance == brian_balance - transaction["amount"]
+     brian_balance = brian_balance - transaction["amount"]
    elsif transaction["from_user"] == "evan"
-     evan_balance == evan_balance - transaction["amount"]
+     evan_balance = evan_balance - transaction["amount"]
    elsif transaction["from_user"] == "anthony"
-     anthony_balance == anthony_balance - transaction["amount"]
+     anthony_balance = anthony_balance - transaction["amount"]
    end
 
   if transaction["to_user"] == "ben"
-    ben_balance == ben_balance + transaction["amount"]
+    ben_balance = ben_balance + transaction["amount"]
   elsif transaction["to_user"] == "brian"
-    brian_balance == brian_balance + transaction["amount"]
+    brian_balance = brian_balance + transaction["amount"]
   elsif transaction["to_user"] == "evan"
-    evan_balance == evan_balance + transaction["amount"]
+    evan_balance = evan_balance + transaction["amount"]
   elsif transaction["to_user"] == "anthony"
-   anthony_balance == anthony_balance + transaction["amount"]
+   anthony_balance = anthony_balance + transaction["amount"]
   end 
 end
 
