@@ -34,7 +34,7 @@ brian_balance = 0
 evan_balance = 0
 anthony_balance = 0
 
-  for transaction in blockchain
+for transaction in blockchain
    if transaction["from_user"] == "ben"
      ben_balance == ben_balance - transaction["amount"]
    elsif transaction["from_user"] == "brian"
